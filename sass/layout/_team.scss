@@ -1,0 +1,42 @@
+.team {
+  display: flex;
+
+  background-color: var(--team-background-color);
+}
+
+.employees {
+  display: flex;
+}
+
+.employees__card {
+  min-width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.employees__block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.employees__name {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.employees__position {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}

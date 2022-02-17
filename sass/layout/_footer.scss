@@ -1,0 +1,93 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-background-color);
+}
+
+.footer--container {
+  display: flex;
+}
+
+// CONTACTS__BLOCK
+
+.contacts__list {
+  margin-top: 20px;
+}
+
+.contacts__item {
+  margin-top: 9px;
+  &:first-child {
+    margin-top: 0px;
+  }
+}
+
+.contacts__link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+  font-style: normal;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__link--map {
+  color: var(--white-color);
+}
+
+// JOIN__BLOCK
+
+.join__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+// SUBSCRIBE__BLOCK
+
+.subscribe {
+  margin-top: 12px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.subscribe__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail__insert {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: rgba(47, 48, 58, 1);
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
